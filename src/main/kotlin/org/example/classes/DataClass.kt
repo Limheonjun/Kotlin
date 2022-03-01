@@ -1,5 +1,7 @@
 package org.example.classes
 
+import org.example.dataset.CourseCategory
+
 /**
  * Data Class
  * - 데이터를 갖고 있는 클래스들은 data class의 분류에 들어감
@@ -15,7 +17,8 @@ package org.example.classes
 data class Course(
     val id: Int,
     val name: String,
-    val author: String
+    val author: String,
+    var courseCateogry: CourseCategory = CourseCategory.DEVELOPEMENT
 )
 
 fun main() {
